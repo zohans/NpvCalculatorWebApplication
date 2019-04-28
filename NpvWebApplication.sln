@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2046
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NpvWebApplication", "NpvWebApplication\NpvWebApplication.csproj", "{359F9D1F-2093-47BD-8D68-8BEE6991CBF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NpvWebApplicationTests", "NpvWebApplicationTests\NpvWebApplicationTests.csproj", "{74FEEE3A-4E72-4B41-A96A-B6C568B67898}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{359F9D1F-2093-47BD-8D68-8BEE6991CBF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{359F9D1F-2093-47BD-8D68-8BEE6991CBF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{359F9D1F-2093-47BD-8D68-8BEE6991CBF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{359F9D1F-2093-47BD-8D68-8BEE6991CBF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74FEEE3A-4E72-4B41-A96A-B6C568B67898}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74FEEE3A-4E72-4B41-A96A-B6C568B67898}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74FEEE3A-4E72-4B41-A96A-B6C568B67898}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74FEEE3A-4E72-4B41-A96A-B6C568B67898}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F2300DB1-678F-45C1-9D6E-9B91712BF302}
+	EndGlobalSection
+EndGlobal

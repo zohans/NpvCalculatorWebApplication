@@ -1,0 +1,66 @@
+﻿@{ 
+    ViewBag.Title = "NPV Calculator";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section scripts{
+    <link href="~/Content/CustomStyle.css" rel="stylesheet"/>
+    <script src="~/Scripts/jquery-3.1.1.min.js"></script>
+    <script src="~/Scripts/angular.js"></script>
+    <script src="~/Scripts/AngularNpvCalculator.js"></script>
+}
+
+<div ng-app="npvCalculatorModule" id="body">
+    <div ng-controller="npvCalculatorCtrl">
+        <h2>NPV Calculator</h2>
+
+        <h3>Series of cash flows</h3>
+        <div>
+            <div>
+                <h2>Update NPV</h2>
+            </div>            
+            <div>
+                <label for="Cash">Cash</label>
+                <input type="number" data-ng-model="NpvInput.Cash" />
+            </div>
+            <div>
+                <label for="CashSeries">Cash Series</label>
+                <input type="number" data-ng-model="NpvInput.CashSeries" />
+            </div>
+            <div>
+                <label for="LowerBound">Lower Bound</label>
+                <input type="number" data-ng-model="NpvInput.LowerBound" />
+            </div>
+            <div>
+                <label for="UpperBound">Upper Bound</label>
+                <input type="number" data-ng-model="NpvInput.UpperBound" />
+            </div>
+            <div>
+                <label for="DiscountRate">Increment Discount Rate</label>
+                <input type="number" data-ng-model="NpvInput.DiscountRate" />
+            </div>
+            <br />
+            <div>
+                <button data-ng-click="calculate()">Calculate</button>
+                <button data-ng-click="cancel()">Cancel</button>
+            </div>
+        </div>
+        <br />
+        <div style="border-top: solid 2px #282828; width: 430px; height: 10px"> </div>
+        <table ng-cloak>
+            <thead>
+                <tr>
+                    <th style="display: none;">ID</th>
+                    <th>Rate</th>
+                    <th>Amount</th>                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="items in npvCashFlowData">
+                    <td>{{items.Rate}}</td>
+                    <td>{{items.Amount | currency:'&#36;':2}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
