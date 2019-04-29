@@ -1,5 +1,3 @@
-"# NpvCalculatorWebApplication" 
-
 Npv Web Application
 ------------------------------------------------
 
@@ -10,7 +8,7 @@ Castle Windsor,
 MVC5,
 WebApi2,
 More details can be found in packages.config. 
-Note : This code solution has already install the above package, please do so if not already done.
+Note : This code solution has already installed the above packages, please do so if not already done.
 
 USER GUIDE
 ------------------------------------------------
