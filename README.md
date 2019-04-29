@@ -1,5 +1,3 @@
-"# NpvCalculatorWebApplication" 
-
 Npv Web Application
 ------------------------------------------------
 
