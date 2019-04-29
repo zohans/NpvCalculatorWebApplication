@@ -20,6 +20,8 @@ app.controller('npvCalculatorCtrl', function ($scope, $http) {
         $scope.NpvInput.LowerDiscountRateBound = '';
         $scope.NpvInput.UpperDiscountRateBound = '';
         $scope.NpvInput.IncrementDiscountRate = '';
+
+        $scope.npvCashFlowData = null;
     }
 
     //Add New Item
