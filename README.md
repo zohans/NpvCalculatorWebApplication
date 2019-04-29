@@ -6,9 +6,9 @@ Npv Web Application
 INSTALLATION 
 ------------------------------------------------
 Angular JS
-Castle Windsor
-MVC5
-WebApi2
+Castle Windsor,
+MVC5,
+WebApi2,
 More details can be found in packages.config. 
 Note : This code solution has already install the above package, please do so if not already done.
 
