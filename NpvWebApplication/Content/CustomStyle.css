@@ -8,7 +8,8 @@ body {
 }
 
 label {
-    width: 80px;
+    width: 220px;
+    padding: .4em 1.4em .4em;
     display: inline-block;
 }
 
@@ -24,11 +25,11 @@ button {
     background: #1276bb;
 }
 
-    button:hover {
-        text-decoration: none;
-        background: #282828;
-        border: solid 1px #000;
-    }
+button:hover {
+    text-decoration: none;
+    background: #282828;
+    border: solid 1px #000;
+}
 
 table {
     padding-top: 1em;

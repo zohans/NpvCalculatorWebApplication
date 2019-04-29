@@ -38,9 +38,8 @@ app.controller('npvCalculatorCtrl', function ($scope, $http) {
             }).then(function successCallback (response) {
                 // this callback will be called asynchronously
                 // when the response is available
-                $scope.npvCashFlowData = response.data;
-                $scope.clear();
-                alert("NpvInput added successfully!!!");
+                $scope.npvCashFlowData = response.data;                
+                alert("Npv calculated successfully!!!");
                 }, function errorCallback(response) {
                     // called asynchronously if an error occurs
                     // or server returns response with an error status.

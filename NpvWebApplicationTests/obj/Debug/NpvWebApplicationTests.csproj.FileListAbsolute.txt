@@ -74,7 +74,6 @@ D:\GitHub\NpvCalculatorWebApplication\NpvWebApplicationTests\bin\Debug\NpvWebApp
 D:\GitHub\NpvCalculatorWebApplication\NpvWebApplicationTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
 D:\GitHub\NpvCalculatorWebApplication\NpvWebApplicationTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
 D:\GitHub\NpvCalculatorWebApplication\NpvWebApplicationTests\bin\Debug\NpvWebApplication.dll
-D:\GitHub\NpvCalculatorWebApplication\NpvWebApplicationTests\bin\Debug\System.Web.Http.dll
 D:\GitHub\NpvCalculatorWebApplication\NpvWebApplicationTests\bin\Debug\Castle.Windsor.dll
 D:\GitHub\NpvCalculatorWebApplication\NpvWebApplicationTests\bin\Debug\System.Web.Mvc.dll
 D:\GitHub\NpvCalculatorWebApplication\NpvWebApplicationTests\bin\Debug\System.Web.Http.WebHost.dll
