@@ -7,13 +7,7 @@ using System.Web.Mvc;
 namespace NpvWebApplication.Controllers
 {
     public class HomeController : Controller
-    {
-        [AcceptVerbs(HttpVerbs.Get)]
-        public ActionResult Product()
-        {
-            return View();
-        }
-
+    {        
         [AcceptVerbs(HttpVerbs.Get)]
         public ActionResult NpvCalculator()
         {
