@@ -20,29 +20,29 @@
                 <h2>Update NPV</h2>
             </div>            
             <div>
-                <label for="Cash">Cash</label>
+                <label for="Cash">Cash ($)</label>
                 <input type="number" data-ng-model="NpvInput.Cash" />
             </div>
             <div>
-                <label for="CashSeries">Cash Series</label>
+                <label for="CashSeries">Cash Series (#)</label>
                 <input type="number" data-ng-model="NpvInput.CashSeries" />
             </div>
             <div>
-                <label for="LowerBound">Lower Bound</label>
-                <input type="number" data-ng-model="NpvInput.LowerBound" />
+                <label for="LowerDiscountRateBound">Lower Bound (%)</label>
+                <input type="number" data-ng-model="NpvInput.LowerDiscountRateBound" />
             </div>
             <div>
-                <label for="UpperBound">Upper Bound</label>
-                <input type="number" data-ng-model="NpvInput.UpperBound" />
+                <label for="UpperDiscountRateBound">Upper Bound (%)</label>
+                <input type="number" data-ng-model="NpvInput.UpperDiscountRateBound" />
             </div>
             <div>
-                <label for="DiscountRate">Increment Discount Rate</label>
-                <input type="number" data-ng-model="NpvInput.DiscountRate" />
+                <label for="IncrementDiscountRate">Increment Discount Rate (%)</label>
+                <input type="number" data-ng-model="NpvInput.IncrementDiscountRate" />
             </div>
             <br />
             <div>
                 <button data-ng-click="calculate()">Calculate</button>
-                <button data-ng-click="cancel()">Cancel</button>
+                <button data-ng-click="reset()">Cancel</button>
             </div>
         </div>
         <br />

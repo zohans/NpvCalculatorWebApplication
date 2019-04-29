@@ -20,9 +20,9 @@ namespace NpvWebApplication.Common.Tests
             NpvInput input = new NpvInput ();
             input.Cash = 100m;
             input.CashSeries = 10m;
-            input.DiscountRate = 0.0025m;
-            input.LowerBound = 0.01m;
-            input.UpperBound = 0.15m;
+            input.IncrementDiscountRate = 0.0025m;
+            input.LowerDiscountRateBound = 0.01m;
+            input.UpperDiscountRateBound = 0.15m;
 
             // Act
             var npvCashFlows = calculator.CalculateCashFlows(input);

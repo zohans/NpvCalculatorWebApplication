@@ -8,23 +8,27 @@ app.controller('npvCalculatorCtrl', function ($scope, $http) {
     $scope.NpvInput = {
         Cash: '',
         CashSeries: '',
-        LowerBound: '',
-        UpperBound: '',
-        DiscountRate: ''
+        LowerDiscountRateBound: '',
+        UpperDiscountRateBound: '',
+        IncrementDiscountRate: ''
     };
 
     // Reset NpvInput details
     $scope.clear = function () {
         $scope.NpvInput.Cash = '';
         $scope.NpvInput.CashSeries = '';
-        $scope.NpvInput.LowerBound = '';
+        $scope.NpvInput.LowerDiscountRateBound = '';
+        $scope.NpvInput.UpperDiscountRateBound = '';
+        $scope.NpvInput.IncrementDiscountRate = '';
     }
 
     //Add New Item
     $scope.calculate = function () {
         if ($scope.NpvInput.Cash != "" &&
             $scope.NpvInput.CashSeries != "" &&
-            $scope.NpvInput.LowerBound != "") {
+            $scope.NpvInput.LowerDiscountRateBound != "" &&
+            $scope.NpvInput.UpperDiscountRateBound != "" &&
+            $scope.NpvInput.IncrementDiscountRate != "") {
 
             // call Http request using $http                            
             $http({
@@ -48,8 +52,8 @@ app.controller('npvCalculatorCtrl', function ($scope, $http) {
         }
     }
 
-   // Cancel NpvInput details
-    $scope.cancel = function () {
+   // reset NpvInput details
+    $scope.reset = function () {
         $scope.clear();
     }
    

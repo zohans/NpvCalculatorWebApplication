@@ -23,14 +23,14 @@ namespace NpvWebApplication.Common
 
             // calc npv base on rate and cash series flows
             var result = new List<NpvCashFlow>();
-            decimal rate = input.LowerBound;
-            while (rate <= input.UpperBound)
+            decimal rate = input.LowerDiscountRateBound;
+            while (rate <= input.UpperDiscountRateBound)
             {
                 double npv = flows.Select((c, n) => c / Math.Pow(1 + Convert.ToDouble(rate), n+1)).Sum(); ;
 
                 result.Add(new NpvCashFlow { Rate = rate, Amount = Convert.ToDecimal(npv) });
 
-                rate = rate + input.DiscountRate;
+                rate = rate + input.IncrementDiscountRate;
             };
 
             return result;

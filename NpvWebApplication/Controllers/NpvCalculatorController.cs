@@ -22,6 +22,12 @@ namespace NpvWebApplication.Controllers
         [HttpPost]
         public IList<NpvCashFlow> CalculateCashFlows(NpvInput input)
         {
+            // turn percentage to decimal. 
+            // TO DO : move this to front end if time allows
+            input.LowerDiscountRateBound = input.LowerDiscountRateBound / 100;
+            input.UpperDiscountRateBound= input.UpperDiscountRateBound / 100; 
+            input.IncrementDiscountRate= input.IncrementDiscountRate / 100;
+
             var result = _npvCalculator.CalculateCashFlows(input);
 
             return result;
