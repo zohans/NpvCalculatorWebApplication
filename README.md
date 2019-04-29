@@ -1,13 +1,13 @@
 Npv Web Application
 ------------------------------------------------
 
-INSTALLATION 
+Development Environment
 ------------------------------------------------
-Angular JS
-Castle Windsor,
-MVC5,
-WebApi2,
-More details can be found in packages.config. 
+1. Visual Studio 2017 and above 
+2. Dot Net framework 4.5 and above
+3. Package installed in Npv Web Applicatio solution:
+Angular JS, Castle Windsor, MVC5, WebApi2. For more details can be found in packages.config. 
+
 Note : This code solution has already installed the above packages, please do so if not already done.
 
 USER GUIDE
